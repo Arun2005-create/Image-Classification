@@ -6,22 +6,54 @@ To Develop a convolutional deep neural network for image classification and to v
 
 ## Problem Statement and Dataset
 
-Include the Problem Statement and Dataset.
+The objective of this project is to create a CNN that can categorize images of fashion items from the Fashion MNIST dataset. This dataset includes grayscale images of clothing and accessories such as T-shirts, trousers, dresses, and footwear. The task is to accurately predict the correct category for each image while ensuring the model is efficient and robust.
+
+1.Training data: 60,000 images
+
+2.Test data: 10,000 images
+
+3.Classes: 10 fashion categories
+
+The CNN consists of multiple convolutional layers with activation functions, followed by pooling layers, and ends with fully connected layers to output predictions for all 10 categories.
 
 ## Neural Network Model
 
-Include the neural network model diagram.
+<img width="1183" height="467" alt="425547172-cb131631-9bba-4dc8-a3c8-dd7a9b3c98ba" src="https://github.com/user-attachments/assets/4bb8cd96-bf53-4665-9f77-25e96fec1121" />
 
 ## DESIGN STEPS
 
 ### STEP 1:
-Write your own steps
+Import the necessary libraries such as NumPy, Matplotlib, and PyTorch.
 
 ### STEP 2:
+Load and preprocess the dataset:
 
+Resize images to a fixed size (128×128).
+Normalize pixel values to a range between 0 and 1.
+Convert labels into numerical format if necessary.
 ### STEP 3:
+Define the CNN Architecture, which includes:
 
+Input Layer: Shape (8,128,128)
+Convolutional Layer 1: 8 filters, kernel size (16×16), ReLU activation
+Max-Pooling Layer 1: Pool size (2×2)
+Convolutional Layer 2: 24 filters, kernel size (8×8), ReLU activation
+Max-Pooling Layer 2: Pool size (2×2)
+Fully Connected (Dense) Layer:
+First Dense Layer with 256 neurons
+Second Dense Layer with 128 neurons
+Output Layer for classification
+### STEP 4:
+Define the loss function (e.g., Cross-Entropy Loss for classification) and optimizer (e.g., Adam or SGD).
 
+### STEP 5:
+Train the model by passing training data through the network, calculating the loss, and updating the weights using backpropagation.
+
+### STEP 6:
+Evaluate the trained model on the test dataset using accuracy, confusion matrix, and other performance metrics.
+
+### STEP 7:
+Make predictions on new images and analyze the results.
 ## PROGRAM
 
 ### Name: ARUN KUMAR B
